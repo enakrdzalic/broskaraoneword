@@ -1,12 +1,12 @@
 {
   "name": "broskaraoneword",
   "version": "1.0.0",
-  "description": "A simple project",
-  "main": "index.js",
+  "description": "One-word-at-a-time ebook reader for The Brothers Karamazov",
+  "main": "index.html",
   "scripts": {
-    "start": "node index.js"
+    "start": "npx http-server -p 3000 -o"
   },
-  "keywords": [],
+  "keywords": ["ebook", "reader", "karamazov"],
   "author": "",
   "license": "MIT"
 }

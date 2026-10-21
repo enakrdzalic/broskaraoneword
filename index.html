@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brothers Karamazov - One Word Reader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pixel-art" id="pixelArt"></div>
+        
+        <div class="reader-box">
+            <div class="word-display" id="wordDisplay">Brothers</div>
+            <div class="counter">Word: <span id="wordCounter">1</span></div>
+        </div>
+        
+        <div class="controls">
+            <button id="playPause" class="btn">▶ Play</button>
+            <button id="slower" class="btn">- Slower</button>
+            <button id="faster" class="btn">+ Faster</button>
+            <div class="speed-display">
+                <span id="wpm">250</span> WPM
+            </div>
+        </div>
+        
+        <div class="jump-section">
+            <input type="number" id="jumpInput" placeholder="Jump to word #" min="1">
+            <button id="jumpBtn" class="btn">Go</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

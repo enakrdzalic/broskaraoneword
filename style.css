@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #f5f5dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.pixel-art {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 30px;
+    background: #e8dcc8;
+    border: 3px solid #333;
+    box-shadow: 4px 4px 0px #888;
+    position: relative;
+}
+
+.reader-box {
+    background: #fff;
+    border: 3px solid #333;
+    box-shadow: 6px 6px 0px #888;
+    padding: 60px 40px;
+    margin-bottom: 30px;
+}
+
+.word-display {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+.counter {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    background: #fff;
+    border: 3px solid #333;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #888;
+    transition: all 0.1s;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+}
+
+.btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #888;
+}
+
+.speed-display {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 12px 20px;
+    background: #e8dcc8;
+    border: 3px solid #333;
+    box-shadow: 4px 4px 0px #888;
+}
+
+.jump-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#jumpInput {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    padding: 12px;
+    border: 3px solid #333;
+    box-shadow: 4px 4px 0px #888;
+    width: 200px;
+    background: #fff;
+}
+
+#jumpInput:focus {
+    outline: none;
+    background: #fffff0;
+}
+
+@media (max-width: 600px) {
+    .word-display {
+        font-size: 36px;
+    }
+    
+    .reader-box {
+        padding: 40px 20px;
+    }
+    
+    .btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
