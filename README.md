@@ -2,6 +2,8 @@
 
 A minimalistic one-word-at-a-time ebook reader for *The Brothers Karamazov* by Fyodor Dostoevsky.
 
+![Screenshot of the ebook reader](screenshot.png)
+
 ## Features
 
 - 📖 Read one word at a time for easier focus
