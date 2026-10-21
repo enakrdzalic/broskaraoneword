@@ -9,7 +9,7 @@ async function loadBook() {
         const response = await fetch('brothers-karamazov.txt');
         const text = await response.text();
         
-        const chapterStart = "Chapter I.\nFyodor Pavlovitch Karamazov";
+        const chapterStart = "Alexey Fyodorovitch Karamazov was the third son";
         const startIndex = text.indexOf(chapterStart);
         const bookText = startIndex !== -1 ? text.substring(startIndex) : text;
         
